@@ -1,0 +1,66 @@
+:root {
+    --bg-grad-1: hsl(214, 60%, 38%);
+    --bg-grad-2: hsl(239, 74%, 12%);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(at top, var(--bg-grad-1), var(--bg-grad-2));
+    min-height: 100vh;
+    color:white;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.buttons {
+    position: relative;
+    display: grid;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-areas:
+      "paper scissors"
+      "rock rock";
+    place-items: center;
+    height: 30rem;
+    padding-top: 4rem;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    font-size: 96px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.btn[choice="paper"] {
+    grid-area: paper;
+}
+
+.btn[choice="scissors"] {
+    grid-area: scissors;
+}
+.btn[choice="rock"] {
+    grid-area: rock;
+}
+
+.game-info{
+    margin-top: 40px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 24px;
+    text-align: center;
+}

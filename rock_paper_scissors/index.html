@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="play('Start')">
-    <div id="buttons">
-        <button onclick="play('Rock')"">✊</button>
-        <button onclick="play('Paper')">✋</button>
-        <button onclick="play('Paper')">✌️</button>
+    <h1>Rock Paper Scissors</h1> 
+    <div class="container">
+        <div class="buttons">
+            <button onclick="play('Rock')" class="btn" choice="rock">✊</button>
+            <button onclick="play('Paper')" class="btn" choice="paper">✋</button>
+            <button onclick="play('Paper')" class="btn" choice="scissors">✌️</button>
+        </div>
+        <div class="game-info">
+            <div id="points"></div>
+            <div id="result"></div>
+            <div id="AIChoice"></div>
+        </div>
     </div>
-    <div id="points"></div>
-    <div id="result"></div>
-    <div id="AIChoice"></div>
     <script src="script.js"></script>
 </body>
 </html>
