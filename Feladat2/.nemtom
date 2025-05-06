@@ -1,0 +1,4 @@
+$servername = "mysql.omega:3306"; // localhost
+$username = "betterix"; // root
+$dbpassword = "Database";
+$dbname = "betterix";

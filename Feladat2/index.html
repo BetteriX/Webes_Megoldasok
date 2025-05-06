@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 80vh;
+            background-color: #f7f9fc;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+      
+          input[type="email"],
+          input[type="password"] {
+            width: 350px;
+            padding: 10px;
+            margin: 10px;
+          }
+      
+          input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            cursor: pointer;
+          }
+        </style>
+</head>
+<body>
+    <h1>Szabó Zsolt</h1>
+    <h3>Neptun kód - M5EO1V</h3>
+
+    <div class="container">
+        <form action="feldolgoz.php" method="POST">
+            Email: <input type="email" name="email"> <br>
+            Jelszó: <input type="password" name="pass"> <br>
+            <input type="submit" value="Bejelentkezés"> 
+        </form>
+    </div>
+</body>
+</html>
