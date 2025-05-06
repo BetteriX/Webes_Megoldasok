@@ -22,7 +22,7 @@ function decode_file($filename)
         $parts = explode('*', $decoded_line);
         if (count($parts) == 2) {
             //echo $parts[0] . ' ' . $parts[1] . "\n\n";
-            $decoded[$parts[0]] = $parts[1]; // Egy hash map ami az email a jelszóra mutatt
+            $decoded[$parts[0]] = $parts[1];
         }
     }
     return $decoded;
